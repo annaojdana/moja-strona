@@ -390,19 +390,28 @@ textarea {
   padding: 50px 0;
   color: #fff;
   font-weight: 100;
+  text-align: center;
 }
 
 .footer-copy-text {
   margin-bottom: 30px;
 }
 
-.footer-bootom-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-text p:first-child {
+.footer-text p {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 995px) {
+  .section-footer {
+    text-align: left;
+  }
+  .footer-bootom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text p:last-child {
+    margin-bottom: 0;
+  }
+}
