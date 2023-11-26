@@ -23,6 +23,7 @@ figure {
 }
 section {
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .section-dark {
