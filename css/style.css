@@ -58,7 +58,7 @@ h3 {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 900;
   margin-bottom: 30px;
 }
@@ -86,13 +86,15 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .menu-list {
   display: none;
   list-style: none;
 }
-
+.menu-list li {
+  margin-bottom: 12px;
+}
 .menu-list-link {
   color: #fff;
   font-size: 16px;
@@ -119,8 +121,31 @@ header {
 .header-button:hover {
   background-color: #bf0034;
 }
+.close-menu svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+.close-menu {
+  display: none;
+}
+.opened {
+  display: block;
+}
 
+nav {
+  text-align: right;
+}
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+  .close-menu {
+    display: none;
+  }
+  .menu {
+    margin-bottom: 150px;
+  }
   .menu-list {
     display: flex;
     gap: 20px;
