@@ -304,6 +304,21 @@ figcaption {
 }
 
 /* section quote */
+
+#quote {
+  position: relative;
+}
+#quote::before {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #4f247c;
+}
+
 .quote-wrapper {
   display: flex;
   align-items: center;
@@ -311,6 +326,7 @@ figcaption {
 }
 blockquote {
   max-width: 80%;
+  z-index: 0;
 }
 .quote-text {
   color: #fff;
