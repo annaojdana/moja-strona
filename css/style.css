@@ -132,7 +132,9 @@ header {
 .opened {
   display: block;
 }
-
+.hidden {
+  display: none;
+}
 nav {
   text-align: right;
 }
