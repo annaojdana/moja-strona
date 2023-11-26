@@ -402,7 +402,7 @@ textarea {
   align-items: center;
 }
 
-.footer-text p {
+.footer-text p:first-child {
   margin-bottom: 12px;
 }
 
